@@ -1,0 +1,49 @@
+.boot-sequence {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--terminal-bg);
+  color: var(--text-color);
+  padding: 2rem;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-content {
+  max-width: 800px;
+}
+
+.terminal-line {
+  margin-bottom: 0.5rem;
+  animation: fadeIn 0.1s ease-in;
+}
+
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-host {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2rem;
+  background-color: var(--text-color);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

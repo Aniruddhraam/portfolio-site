@@ -1,0 +1,60 @@
+.page-container {
+  max-width: 900px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.api-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.api-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.status-badge {
+  background-color: rgba(46, 160, 67, 0.2);
+  color: var(--success-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.time-badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.json-container {
+  background-color: rgba(1, 4, 9, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  backdrop-filter: blur(5px);
+}
+
+.json-code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e6edf3;
+}
+
+.json-item {
+  transition: background-color 0.2s;
+}
+
+.json-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
